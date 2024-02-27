@@ -21,12 +21,16 @@ a{
 body{
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    color: white;
 }
 
 
 /* COMMON */
 .flex{
     display: flex;
+}
+
+.wrap{
     flex-wrap: wrap;
 }
 
@@ -44,10 +48,33 @@ body{
 
 /* UTILITIES */
 
+.btn{
+    padding: 10px;
+    text-align: center;
+    /* debug */
+    /* border: 1px solid white;
+    border-radius: 10px;
+    min-width: 50px; */
+    line-height: 1.5rem;
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.405);
+    border-radius: 20px;
+}
+
+.pd-left{
+    padding-left: 15px;
+}
+
+.font-green{
+    color: green;
+}
+
 /* MAIN */
 
 main{
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     padding-top: 80px;
     padding-bottom: 20px;
 
@@ -83,7 +110,6 @@ main span{
     display: inline-block;
     padding: 5px 10px;
     font-size: 0.6rem;
-    color: white;
     background-color: rgba(63, 63, 63, 0.6);
 }
 
@@ -107,8 +133,61 @@ main span{
 
 /* NAV */
 nav{
-    width: 100%;
-    height: 100px;
+    display: inline-block;
+    width: 100%;height: 80px;
     background-color: #222222;
+    align-items: center;
+    overflow-y: auto; 
+}
 
+nav ul{
+    height: 100%;
+    align-items: center;
+}
+
+.audio-video, .end-call{
+    width: 20%;
+    height: 100%;
+}
+
+.mute, .stop-video{
+    align-items: center;
+}
+
+.main-control{
+    width: 60%;
+    height: 100%;
+}
+
+.nav-icon{
+    font-size: 1.5rem;
+}
+
+.main-control ul{
+    justify-content: center;
+}
+
+nav li .btn{
+    align-items: center;
+}
+
+.end-call{
+    color: red;
+    height: 100%;
+    justify-content: right;
+}
+
+.end-call h6{
+    text-align: right;
+    padding: 20px;
+    
+}
+
+.end-call div{
+
+    background-color: #4A4A4A;
+    height: 100%;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
 }
